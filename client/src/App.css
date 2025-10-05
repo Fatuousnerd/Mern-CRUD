@@ -5,38 +5,33 @@
 @tailwind utilities;
 
 :root {
-  --MainBgColorLight: #f0f8ff;
-  --MainTextColorLight: #0A0A0A;
-  --SecBgColorLight: #F0F0F0;
-  --SecTextColorLight: #555555;
-  --HTextColorLight: #7A33FF;
-  --ContrastTextColorLight: #A382FF;
+  --MainBgLight: #f0f8ff;
+  --MainTextLight: #0A0A0A;
+  --SecBgLight: #F0F0F0;
+  --SecTextLight: #555555;
+  --HTextLight: #2723fc;
 
-  --DarkBgColor: #0A0A0A;
-  --DarkTextColor: #F8FFFF;
-  --SecDarkBgColor: #1C1C1C;
-  --SecDarkTextColor: #CCCCCC;
-  --HDarkTextColor: #A259FF;
-  --ContrastDarkTextColor: #D896FF;
+  --DarkBg: #0A0A0A;
+  --DarkText: #F8FFFF;
+  --SecDarkBg: #1C1C1C;
+  --SecDarkText: #CCCCCC;
+  --HDarkText: #1f15de;
 }
 
-
 body.light {
-  --MainBgColor: var(--MainBgColorLight);
-  --MainTextColor: var(--MainTextColorLight);
-  --SecBgColor: var(--SecBgColorLight);
-  --SecTextColor: var(--MainTextColorLight);
-  --HTextColor: var(--HTextColorLight);
-  --ContrastTextColor: var(--ContrastTextColorLight);
+  --MainBg: var(--MainBgLight);
+  --MainText: var(--MainTextLight);
+  --SecBg: var(--SecBgLight);
+  --SecText: var(--MainTextLight);
+  --HText: var(--HTextLight);
 }
 
 body.dark {
-  --MainBgColor: var(--DarkBgColor);
-  --MainTextColor: var(--DarkTextColor);
-  --SecBgColor: var(--SecDarkBgColor);
-  --SecTextColor: var(--SecDarkTextColor);
-  --HTextColor: var(--HDarkTextColor);
-  --ContrastTextColor: var(--ContrastDarkTextColor);
+  --MainBg: var(--DarkBg);
+  --MainText: var(--DarkText);
+  --SecBg: var(--SecDarkBg);
+  --SecText: var(--SecDarkText);
+  --HText: var(--HDarkText);
 }
 
 html {
@@ -55,8 +50,8 @@ html {
 }
 
 body {
-  background: var(--MainBgColor);
-  color: var(--MainTextColor);
+  background: var(--MainBg);
+  color: var(--MainText);
   min-height: 100vh;
   transition: all ease-in-out .5s;
 
@@ -82,7 +77,7 @@ li {
 }
 
 li>a:hover {
-  color: var(--HTextColor);
+  color: var(--HText);
   transform: scale(1.25);
   transition: all ease-out .25s;
 }
@@ -93,5 +88,5 @@ button {
 }
 
 span {
-  color: var(--HTextColor);
+  color: var(--HText);
 }
