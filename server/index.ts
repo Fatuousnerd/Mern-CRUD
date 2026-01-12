@@ -21,7 +21,7 @@ app.use(bodyParser.json());
 mongoose
   .connect(`${process.env.CONNECTION_STRING_LOCALHOST}/${process.env.DB}`)
   .then(() => console.log("Connected to MongoDB"))
-  .catch((err) => console.log("MongoDB connection error", err));
+  .catch((err: Error) => console.log("MongoDB connection error", err));
 
 //Use Routes
 
